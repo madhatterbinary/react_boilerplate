@@ -1,0 +1,179 @@
+{
+	"settings": {
+		"startDate": "23/12/2016",
+		"expiryDate": "28/12/2016",
+
+		"env": {
+			"dev": {
+				"promoID": 0
+			},
+			"staging": {
+				"promoID": 0
+			},
+			"prod": {
+				"promoID": 2803
+			}
+		},
+
+		"dataServiceRequests": {
+
+			"checkPromoExpiry": {
+				"execute": true,
+				"hasPreScreen": true
+			},
+
+			"checkMemberEligibility": {
+				"execute": false
+			},
+
+			"checkMemberCompValue": {
+				"execute": false
+			},
+
+			"checkMemberPreviousRounds": {
+				"execute": true
+			}
+		}
+	},
+
+	"content": {
+		"title": "<img src='images/logo/vip-logo.png'/>",
+
+		"labels": {
+			"viewGames": "View Games",
+			"termsConditions": "Terms and Conditions",
+			"select": "Select",
+			"confirm": "Confirm",
+			"back": "Back"
+		},
+
+		"preScreen": {
+			"headerImage": "images/header/scale-%s/header-00-%w.jpg",
+			"strapline": "",
+			"copy": "<p>Catch one of our snowflakes to choose Cashback, Joy Points or a Net Deposit Bonus this Christmas!</p>",
+			"playNowURL": "/"
+		},
+
+		"pickScreen": {
+			"selectLabel": "<h2></h2>",
+			"copy": "<p>From 23/12/2016 to 28/12/2016</p><p>Catch one of our snowflakes to choose Cashback, Joy Points or a Net Deposit Bonus this Christmas!</p>"
+		},
+
+		"confirmScreen": {
+			"copy": "<p>A very short text. Please confirm the choice ({choice}) you just made.</p>"
+		},
+
+		"completeScreen": {
+			"image": "images/success-screen-creative/_%w.png",
+			"copy": "<p>From 23/12/2016 to 28/12/2016</p>",
+			"extraCopy": "<p>This is some additional copy in case the promotion has a long copy.</p><p>In that case the copy writer extracts the most important message to the top and adds the details here.</p>",
+			"playNowURL": "/"
+		},
+
+		"items": [{
+			"name": "Option 1",
+			"link": "/",
+			"image": "images/tile-105/option-1/scale-%s/_%w.png",
+			"imageResult": "images/tile-105/option-1/scale-%s/_%w.png",
+			"copy": "<p>Congratulations, you’ve chosen up to 20% cracking Cashback!</p>",
+			"table_data": {
+				"columns": [{
+					"key": "Dayswagered",
+					"label": "Days £100+ is wagered"
+				}, {
+					"key": "Cashback",
+					"label": "Cashback %"
+				}, {
+					"key": "MaxBonus",
+					"label": "Max Bonus"
+				}],
+				"rows": [{
+					"id": 1,
+					"Dayswagered": "1 or 2",
+					"Cashback": "10%",
+					"MaxBonus": "£250"
+				}, {
+					"id": 2,
+					"Dayswagered": "3 or 4",
+					"Cashback": "15%",
+					"MaxBonus": "£500"
+				}, {
+					"id": 3,
+					"Dayswagered": "5",
+					"Cashback": "20%",
+					"MaxBonus": "£750"
+				}]
+			}
+
+
+		}, {
+			"name": "Option 2",
+			"link": "/",
+			"image": "images/tile-105/option-2/scale-%s/_%w.png",
+			"imageResult": "images/tile-105/option-2/scale-%s/_%w.png",
+			"copy": "<p>Congratulations, you’ve chosen up to 20,000 amazing Joy Points!</p>",
+			"table_data": {
+				"columns": [{
+					"key": "Dayswagered",
+					"label": "Days £100+ is wagered"
+				}, {
+					"key": "PointsMultiplier",
+					"label": "Joy Points Multiplier"
+				}, {
+					"key": "MaxPoints",
+					"label": "Max No. of extra Joy Points"
+				}],
+				"rows": [{
+					"id": 1,
+					"Days £100+ is wagered": "1 or 2",
+					"Joy Points Multiplier": "2x",
+					"Max No. of extra Joy Points": "10,000"
+				}, {
+					"id": 2,
+					"Days £100+ is wagered": "3 or 4",
+					"Joy Points Multiplier": "3x",
+					"Max No. of extra Joy Points": "10,000"
+				}, {
+					"id": 3,
+					"Days £100+ is wagered": "5",
+					"Joy Points Multiplier": "4x",
+					"Max No. of extra Joy Points": "20,000"
+				}]
+			}
+		}, {
+			"name": "Option 3",
+			"link": "/",
+			"image": "images/tile-105/option-3/scale-%s/_%w.png",
+			"imageResult": "images/tile-105/option-3/scale-%s/_%w.png",
+			"copy": "<p>Congratulations, you’ve chosen a Net Deposit Bonus of up to £500!</p>",
+			"table_data": {
+				"columns": [{
+					"key": "NetDeposits",
+					"label": "Net Deposits"
+				}, {
+					"key": "Bonus",
+					"label": "Bonus %"
+				}, {
+					"key": "MaxBonus",
+					"label": "Max Bonus"
+				}],
+				"rows": [{
+					"id": 1,
+					"Net Deposits": "£100 - £499",
+					"Bonus %": "10%",
+					"Max Bonus": "£50"
+				}, {
+					"id": 2,
+					"Net Deposits": "£500 - £999",
+					"Bonus %": "15%",
+					"Max Bonus": "£150"
+				}, {
+					"id": 3,
+					"Net Deposits": "£1000+",
+					"Bonus %": "20%",
+					"Max Bonus": "£500"
+				}]
+			}
+		}]
+	}
+}
